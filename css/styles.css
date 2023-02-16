@@ -1,7 +1,10 @@
 :root {
   --accent-color: #2196f3;
+  --second-accent-color: #ffffff;
   --primary-color: #757575;
   --secondary-color: #212121;
+  --background-color: #2f303a;
+  --portfolio-buttom-color: #f5f4fa;
 }
 .list {
   list-style: none;
@@ -14,28 +17,35 @@ body {
   font-family: "Roboto", sans-serif;
   color: var(--primary-color);
 }
-
-.portfolio-box,
-.horizontal-block {
-  display: flex;
+.accent {
+  color: var(--accent-color);
 }
+/* .horizontal-block {
+  display: flex;
+} */
 /* <=======logo=======> */
 .logo-link {
   font-family: "Raleway";
-  font-style: normal;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.33;
   letter-spacing: 0.03em;
   color: black;
 }
-.logo-link span {
+.logo-link-footer {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.33;
+  letter-spacing: 0.03em;
+  color: var(--second-accent-color);
+}
+.logo-accent {
   color: var(--accent-color);
 }
 /* <=======navigation=======> */
 .nav-link {
   font-family: "Roboto";
-  font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.33;
@@ -44,7 +54,6 @@ body {
 }
 .nav-link:hover,
 .nav-link:focus {
-  font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.33;
@@ -52,7 +61,6 @@ body {
   color: var(--accent-color);
 }
 .contact {
-  font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.33;
@@ -65,7 +73,7 @@ body {
 }
 /* <=======hero=======> */
 .hero {
-  background-color: #2f303a;
+  background-color: var(--background-color);
 }
 .hero-title {
   font-style: normal;
@@ -75,11 +83,10 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--second-accent-color);
 }
 .model-btn {
   border: none;
-  font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.33;
@@ -87,7 +94,7 @@ body {
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
-  color: #ffffff;
+  color: var(--second-accent-color);
   cursor: pointer;
   /* backgroud button */
   background: var(--accent-color);
@@ -102,9 +109,7 @@ body {
   border-radius: 4px;
 }
 /* <=======sub hero=======> */
-.sub-hero-title,
-.portfolio-title {
-  font-style: normal;
+.sub-hero-title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.33;
@@ -114,14 +119,12 @@ body {
 }
 .sub-title,
 .sub-portfolio-title {
-  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.33;
   letter-spacing: 0.03em;
 }
 .employment-and-team {
-  font-style: normal;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.33;
@@ -130,7 +133,6 @@ body {
   color: var(--secondary-color);
 }
 .name {
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.33;
@@ -139,7 +141,6 @@ body {
   color: var(--secondary-color);
 }
 .work {
-  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.33;
@@ -152,12 +153,11 @@ body {
   font-size: 14px;
   line-height: 1.33;
   letter-spacing: 0.03em;
-  color: #ffffff;
+  color: var(--second-accent-color);
 }
 /* <=======footer=======> */
 
 .contact-list {
-  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.33;
@@ -165,14 +165,12 @@ body {
   color: rgba(255, 255, 255, 0.6);
 }
 .footer {
-  background-color: #2f303a;
+  background-color: var(--background-color);
 }
 /* <=======Portfolio=======> */
 .button-portfolio-model {
-  
   border: none;
   display: flex;
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.33;
@@ -181,7 +179,7 @@ body {
   color: black;
   cursor: pointer;
   /* button background */
-  background: #f5f4fa;
+  background: var(--portfolio-buttom-color);
   border-radius: 4px;
 }
 .button-portfolio-model:hover,
@@ -191,8 +189,22 @@ body {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
-  color: #ffffff;
+  color: var(--second-accent-color);
 }
 .button-portfolio {
   display: flex;
+}
+.portfolio-cards-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 36px;
+  letter-spacing: 0.06em;
+  color: #212121;
+}
+.sub-portfolio-cards-title {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.03em;
+  color: #757575;
 }
