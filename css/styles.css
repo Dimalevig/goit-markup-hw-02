@@ -76,7 +76,6 @@ body {
   background-color: var(--background-color);
 }
 .hero-title {
-  font-style: normal;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.33;
